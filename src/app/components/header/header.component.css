@@ -64,3 +64,12 @@ input {
 .btn-register:hover {
   background-color: #ff1919;
 }
+.logo {
+  cursor: pointer; /* Biến con trỏ chuột thành hình bàn tay */
+  user-select: none; /* (Tùy chọn) Không cho bôi đen chữ này */
+}
+
+/* Hiệu ứng khi di chuột vào cho xịn hơn (Tùy chọn) */
+.logo:hover {
+  opacity: 0.8; /* Làm mờ nhẹ một chút để người dùng biết là bấm được */
+}
