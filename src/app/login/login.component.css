@@ -1,0 +1,95 @@
+
+.login-bg {
+  /* 1. Ép dính vào 4 góc màn hình (Bất chấp cha con) */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;       /* Phủ kín */
+  background-position: center;  /* Căn giữa */
+  background-repeat: no-repeat;
+}
+.login-container {
+  max-width: 450px;       /* Chiều rộng tối đa */
+  margin: 50px auto;      /* Căn giữa màn hình */
+  padding: 60px;          /* Khoảng cách bên trong */
+  background-color: rgba(255, 255, 255, 0.75); /* Màu trắng  trong suốt 75% */
+  border-radius: 30;     /* Bo tròn góc */
+  color: white;           /* Chữ màu trắng */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Tạo bóng đổ cho nổi */
+}
+
+/* 2. Tiêu đề (Đăng nhập/Đăng ký) */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left; /* Căn trái giống Netflix */
+  color: #000000; 
+}
+
+/* 3. Các ô nhập liệu (Input) */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #000000; /* Màu xám nhạt */
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  background-color: #333; /* Nền ô nhập màu xám đen */
+  border: none;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  outline: none; /* Bỏ viền xanh mặc định khi bấm vào */
+}
+
+/* Hiệu ứng khi bấm vào ô nhập */
+input:focus {
+  background-color: #454545; /* Sáng hơn một chút */
+  border-bottom: 2px solid #ffffff; 
+}
+
+/* 4. Nút bấm (Màu đỏ đặc trưng) */
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background-color: #e50914; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #f40612; 
+}
+
+p {
+  margin-top: 20px;
+  color: #737373;
+  font-size: 1rem;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline; 
+}
