@@ -1,0 +1,7 @@
+/* Thiết lập màu nền chung cho cả web */
+body {
+  background-color: #141414; /* Màu đen Netflix */
+  color: white; /* Chữ màu trắng */
+  margin: 0;
+  font-family: sans-serif;
+}

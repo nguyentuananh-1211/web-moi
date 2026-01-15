@@ -1,0 +1,10 @@
+<header>
+  <div class="logo" routerLink="/">Phim Hay TG</div> <div class="search-box">
+    <input 
+  type="text" 
+  placeholder="Tìm tên phim..." 
+  #searchInput
+  (keydown.enter)="$event.preventDefault(); search(searchInput.value)"
+>
+  </div>
+</header>

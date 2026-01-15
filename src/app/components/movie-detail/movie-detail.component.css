@@ -1,0 +1,104 @@
+.detail-container {
+  position: relative;
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.3); 
+  z-index: -1;
+}
+
+.content {
+  display: flex;    
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 40px; 
+}
+
+/* Cột ảnh poster */
+.poster img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Cột thông tin */
+.info {
+  flex: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.tagline {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.meta {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.overview {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.genre-tag {
+  background: #c50a0a;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.btn-watch {
+  background-color: #161616;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: 15px;
+}
+
+.btn-back {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.video-container {
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.video-container h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Kết quả tìm kiếm cho: "{{ query }}"</h1>
+
+  <div class="movie-list">
+    <div *ngFor="let movie of movies" class="movie-card" [routerLink]="['/movie', movie.id]">
+      <img *ngIf="movie.poster_path" [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="{{ movie.title }}">
+
+      <h3>{{ movie.title }}</h3>
+      <p>Điểm: {{ movie.vote_average }}</p>
+    </div>
+  </div>
+</div>

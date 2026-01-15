@@ -1,0 +1,30 @@
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #797979;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+.logo {
+  color: #000000;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+input {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 300px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+  } 
