@@ -1,18 +1,15 @@
 
 .login-bg {
-  /* 1. Ép dính vào 4 góc màn hình (Bất chấp cha con) */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop');
   background-size: cover;       /* Phủ kín */
   background-position: center;  /* Căn giữa */
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .login-container {
-  max-width: 450px;       /* Chiều rộng tối đa */
+ max-width: 700px;       /* Chiều rộng tối đa */
   margin: 50px auto;      /* Căn giữa màn hình */
   padding: 60px;          /* Khoảng cách bên trong */
   background-color: rgba(255, 255, 255, 0.75); /* Màu trắng  trong suốt 75% */
@@ -39,7 +36,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-size: 0.9rem;
-  color: #000000; /* Màu xám nhạt */
+  color: #000000; 
 }
 
 input {
@@ -47,10 +44,12 @@ input {
   padding: 16px;
   background-color: #333; /* Nền ô nhập màu xám đen */
   border: none;
-  border-radius: 4px;
-  color: rgb(255, 255, 255);
+  border-radius: 14px;
+  color: rgb(255, 255, 255, 0.55);
   font-size: 1rem;
-  outline: none; /* Bỏ viền xanh mặc định khi bấm vào */
+  outline: none; /* Bỏ viền xanh mặc định khi bấm vào */       
+  margin-bottom: 15px;   /* Khoảng cách giữa các dòng */
+  box-sizing: border-box;
 }
 
 /* Hiệu ứng khi bấm vào ô nhập */

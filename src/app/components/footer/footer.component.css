@@ -1,0 +1,101 @@
+/* Tổng thể Footer */
+.footer {
+display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #797979;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Chia cột bằng Flexbox */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 10px ;/* Chia đều độ rộng */
+  padding: 0 20px;
+  min-width: 250px; /* Đảm bảo không bị co quá nhỏ */
+  margin-bottom: 20px;
+}
+
+/* Style cho Logo */
+.logo-text {
+  color: white;
+  margin-bottom: 15px;
+}
+.logo-text span {
+  color: #e50914; /* Màu đỏ kiểu Netflix */
+}
+
+.footer-section h2 {
+  color: white;
+  margin-bottom: px;
+  font-size: 25px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.links ul li a:hover {
+  color: #ff000d; /* Hover chuyển màu đỏ */
+  padding-left: 7px; /* Hiệu ứng đẩy nhẹ sang phải */
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 15px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.social-links a:hover {
+  background: #e50914;
+}
+
+.footer-bottom {
+  background: #000;
+  color: #ffffff;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;    
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+/* --- Responsive cho Điện thoại --- */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Xếp chồng các cột lên nhau */
+  }
+  
+  .footer-section {
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center; /* Canh giữa nội dung trên mobile */
+  }
+}

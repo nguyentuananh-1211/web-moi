@@ -16,3 +16,14 @@ body {
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.5); 
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+app-root {
+  display: block;
+  min-height: 100vh;
+  display: flex;       /* Dùng Flexbox ngay từ gốc */
+  flex-direction: column;
+}
