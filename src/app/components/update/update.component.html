@@ -1,0 +1,70 @@
+
+<div class="container py-4">
+  <h2 class="text-center mb-4">⚙️ Trang Quản Lý Phim</h2>
+
+  <div class="card shadow mb-4">
+    <div class="card-header bg-warning text-dark fw-bold">
+      {{ isEditMode ? '🛠 Sửa Phim' : '✨ Thêm Phim Mới' }}
+    </div>
+    <div class="card-body">
+      <form [formGroup]="movieForm" (ngSubmit)="onSubmit()" class="row g-3">
+        <div class="col-md-6">
+          <label>Tên phim</label>
+          <input type="text" formControlName="title" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label>Điểm</label>
+          <input type="number" formControlName="vote_average" class="form-control">
+        </div>
+        <div class="col-12">
+          <label>Link Ảnh</label>
+          <input type="text" formControlName="poster_path" class="form-control">
+        </div>
+        <div class="col-12">
+          <label>Mô tả</label>
+          <textarea formControlName="overview" class="form-control" rows="2"></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success me-2">{{ isEditMode ? 'Lưu' : 'Thêm' }}</button>
+          <button type="button" class="btn btn-secondary" *ngIf="isEditMode" (click)="resetForm()">Hủy</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Hình ảnh</th>
+        <th>Tên phim</th>
+        <th>Điểm</th>
+        <th>Thao tác</th>
+      </tr>
+    </thead>
+   <tbody>
+  <tr *ngFor="let m of movies">
+    
+    <td>{{ m.id }}</td>
+    
+    <td>
+      <img [src]="'https://image.tmdb.org/t/p/w200' + m.poster_path" 
+           onerror="this.src='https://via.placeholder.com/50x75'"
+           alt="Poster">
+    </td>
+    
+    <td class="fw-bold text-warning">{{ m.title }}</td>
+    
+    <td>
+      <span class="badge bg-secondary">{{ m.vote_average }}</span>
+    </td>
+    
+    <td>
+      <button class="btn btn-sm btn-primary me-2" (click)="onEdit(m)">Sửa</button>
+      <button class="btn btn-sm btn-danger" (click)="onDelete(m.id)">Xóa</button>
+    </td>
+
+  </tr>
+</tbody>
+  </table>
+</div>

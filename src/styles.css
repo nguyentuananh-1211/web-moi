@@ -6,15 +6,16 @@ body {
   font-family: sans-serif;
 }
 body {
-  /* Link ảnh nền (bạn có thể thay bằng link khác nếu thích) */
+  padding-top: 70px !important;
   background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/dace47b4-a5cb-4368-80fe-c26f3e77d540/f5b52435-458f-498f-9d1d-ccd4f1af9913/VN-vi-20231023-popsignuptwoweeks-perspective_alpha_website_large.jpg');
   background-size: cover;       /* Phủ kín màn hình */
   background-position: center;  /* Căn giữa ảnh */
-  background-attachment: fixed; /* Cố định ảnh khi cuộn */
+  background-attachment: fixed; /* Cố định ảnh khi cuộn */  
   background-repeat: no-repeat;
   /* Lớp phủ màu đen mờ lên ảnh để chữ dễ đọc hơn */
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.5); 
+  
 }
 html, body {
   height: 100%;

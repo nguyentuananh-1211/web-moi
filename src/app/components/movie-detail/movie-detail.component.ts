@@ -10,6 +10,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'; // 1.
 })
 export class MovieDetailComponent implements OnInit {
   movie: any;
+  cast : any[] = [];
   videoUrl: SafeResourceUrl | null = null; 
 
   constructor(
@@ -19,20 +20,17 @@ export class MovieDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+      window.scrollTo(0, 0);
     const id = this.route.snapshot.paramMap.get('id');
 
     if (id) {
-      // Lấy thông tin phim
       this.movieService.getMovieDetail(id).subscribe((data) => {
         this.movie = data;
-      });
+      }); 
 
-      // 3. Lấy Trailer phim
       this.movieService.getMovieVideos(id).subscribe((data) => {
         if (data.results && data.results.length > 0) {
-          // Tìm video nào là 'Trailer' và ở trên 'YouTube'
-          const trailer = data.results.find((vid: any) => vid.type === 'Trailer' && vid.site === 'YouTube');
-          
+          const trailer = data.results.find((vid: any) => vid.type === 'Trailer' && vid.site === 'YouTube');   
           if (trailer) {
             const url = 'https://www.youtube.com/embed/' + trailer.key;
             this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);

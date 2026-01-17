@@ -7,13 +7,14 @@
     display: flex;
   align-items: center;
   justify-content: center;
+    height: 100vh;
 }
 .register-container {
   max-width: 700px;       /* Chiều rộng tối đa */
   margin: 50px auto;      /* Căn giữa màn hình */
   padding: 60px;          /* Khoảng cách bên trong */
   background-color: rgba(255, 255, 255, 0.75); /* Màu trắng  trong suốt 75% */
-  border-radius: 30;     /* Bo tròn góc */
+  border-radius: 30px;     /* Bo tròn góc */
   color: white;           /* Chữ màu trắng */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Tạo bóng đổ cho nổi */
   

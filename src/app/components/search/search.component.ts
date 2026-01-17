@@ -17,23 +17,19 @@ export class SearchComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // Theo dõi thanh địa chỉ liên tục
-    this.route.params.subscribe(params => {
-      // Lấy từ khóa 'query' cho khớp với file Routing
-      this.query = params['query']; 
+    this.route.queryParams.subscribe(params => {
+      this.query = params['q']; 
       
       console.log("Từ khóa nhận được:", this.query);
 
-      // Nếu có từ khóa thì mới gọi API
       if (this.query) {
         this.searchMovies();
       }
     });
   }
-
   searchMovies() {
     this.movieService.searchMovies(this.query).subscribe(data => {
-      this.movies = data.results;
+      this.movies = data;
       console.log("Đã tìm thấy phim:", this.movies);
     });
   }

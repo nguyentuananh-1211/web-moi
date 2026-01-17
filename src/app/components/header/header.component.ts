@@ -1,22 +1,24 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'; // 1. Import Router để chuyển trang
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  
+  searchTerm: string = ''; 
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
- search(term: string): void {
-  // 1. In ra xem hàm có chạy không và nhận được chữ gì
-  console.log('Đã gọi hàm search!'); 
-  console.log('Từ khóa nhận được:', term);
-
-  if (term) {
-    this.router.navigate(['/search', term]);
+  ngOnInit(): void {
   }
+
+  Search(keyword: string): void 
+  {
+    if (keyword.trim()) {
+      this.router.navigate(['/search'], { queryParams: { q: keyword  } });
+    }
   }
 }

@@ -1,46 +1,36 @@
-<div class="detail-container" *ngIf="movie">
-  <div class="backdrop" [style.backgroundImage]="'url(https://image.tmdb.org/t/p/original' + movie.backdrop_path + ')'"></div>
+<div class="full-screen-bg"
+     [style.background-image]="'url(https://image.tmdb.org/t/p/original' + (movie.backdrop_path ? movie.backdrop_path : movie.poster_path) + ')'">
+</div>
 
-  <div class="content">
-    <div class="poster">
-      <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="{{ movie.title }}">
+<div class="black-overlay"></div>
+
+<div class="container content-container">
+  <div class="row align-items-center">
+    
+    <div class="col-md-4 mb-4 mb-md-0">
+      <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" 
+           class="img-fluid rounded shadow-lg poster-card" 
+           alt="Poster">
     </div>
 
-    <div class="info">
-      <h1>{{ movie.title }}</h1>
-      <p class="tagline">{{ movie.tagline }}</p>
+    <div class="col-md-8 text-white">
+      <h1 class="display-4 text-outline fw-bold">{{ movie.title }}</h1>
       
-      <div class="meta">
-        <span class="badge">{{ movie.release_date | date:'yyyy' }}</span>
-        <span class="rating">⭐ {{ movie.vote_average }}/10</span>
-        <span class="runtime">⏳ {{ movie.runtime }} phút</span>
+      <div class="d-flex align-items-center gap-3 my-3">
+        <span class="badge bg-warning text-dark fs-6">{{ movie.vote_average.toFixed(1) }} ⭐</span>
+        <span>📅 {{ movie.release_date | date:'yyyy' }}</span>
+        <span *ngIf="movie.runtime">⏳ {{ movie.runtime }} phút</span>
       </div>
 
-      <h2>Nội dung chính</h2>
-      <p class="overview">{{ movie.overview }}</p>
+      <p class="lead" style="font-size: 1.1rem; opacity: 0.9;">
+        {{ movie.overview }}
+      </p>
 
-      <div class="genres">
-        <span *ngFor="let genre of movie.genres" class="genre-tag">
-          {{ genre.name }}
-        </span>
+      <div class="mt-4">
+        <button class="btn btn-danger btn-lg me-3">▶ Xem Ngay</button>
+        <button class="btn btn-outline-light btn-lg" routerLink="/">Quay lại</button>
       </div>
-        <div *ngIf="videoUrl; else noTrailer" class="video-container">
-        <h3>Trailer Chính Thức</h3>
-        <iframe 
-          [src]="videoUrl" 
-          width="100%" 
-          height="400" 
-          frameborder="0" 
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <ng-template #noTrailer>
-        <button class="btn-watch">🚫 Chưa có Trailer</button>
-      </ng-template>
-
-      <a routerLink="/" class="btn-back" (click)="goBack()" >
-        <span>←</span> Quay lại</a>
     </div>
+
   </div>
 </div>

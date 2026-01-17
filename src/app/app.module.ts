@@ -11,6 +11,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdateComponent } from './components/update/update.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +22,16 @@ import { FooterComponent } from './components/footer/footer.component';
     SearchComponent,
     LoginComponent,
     RegisterComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    UpdateComponent,
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

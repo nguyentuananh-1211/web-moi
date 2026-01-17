@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Kết quả tìm kiếm cho: "{{ query }}"</h1>
+  <h1 class="search-title">Kết quả tìm kiếm cho: "{{ query }}"</h1>
 
   <div class="movie-list">
     <div *ngFor="let movie of movies" class="movie-card" [routerLink]="['/movie', movie.id]">

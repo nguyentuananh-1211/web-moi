@@ -1,16 +1,18 @@
-<div class="container">
-  <h1>Phim Thịnh Hành</h1>
-  <div class="movie-list">  
-    <div *ngFor="let movie of movies" class="movie-card">   
-    <div class="movie-poster">
-      <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" 
-           [alt]="movie.title">
-      <div class ="movie-info">
-      <h3>{{ movie.title }}</h3>
-      <p>Điểm: {{ movie.vote_average }}</p>
-    <a [routerLink]="['/movie', movie.id]">Xem chi tiết</a>
+<div class="container py-4">
+  
+  <h3>🎬 Phim Mới Cập Nhật </h3>
+  
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col" *ngFor="let m of movies">
+      <div class="card h-100 shadow-sm movie-card">
+        <img [src]="'https://image.tmdb.org/t/p/w500' + m.poster_path" class="card-img-top" style="height:400px; object-fit:cover">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">{{ m.title }}</h6>
+          <span class="badge bg-warning text-dark">{{ m.vote_average }} ⭐</span>
+        </div>
+        <div class="card-footer bg- transparent border-0">
+          <a [routerLink]="['/movie', m.id]" class="btn ">Xem Chi Tiết</a>
+      </div>
+    </div>
+  </div>
 </div>
-</div>  
-</div>
- <div class="load-more-container">
-  <button (click)="loadMore()" class="btn-load-more">Xem thêm phim</button>

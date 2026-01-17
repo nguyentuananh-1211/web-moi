@@ -1,26 +1,60 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpHeaders  } from '@angular/common/http'; 
-import { Observable, throwError} from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
-import { environment } from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { Observable, of } from 'rxjs'; // Import thêm 'of' để xử lý videos nếu không có
+
 @Injectable({
   providedIn: 'root'
-})  
+})
 export class MovieService {
-    private apiKey: string = "547efffa5b057444a2d539a78f77f612";
-    private baseURL: string = environment.baseURL;
-    
+  private apiUrl = 'http://localhost:3000/movies'; 
+
   constructor(private http: HttpClient) { }
- getPopularMovies(page: number): Observable<any> {
-  return this.http.get(`${this.baseURL}/movie/popular?api_key=${this.apiKey}&language=vi-VN&page=${page}`);
+  getPopularMovies(): Observable<any[]> {
+  return this.http.get<any[]>(`${this.apiUrl}?_sort=popularity&_order=desc`);
 }
-  getMovieDetail(id: string): Observable<any> {
-  return this.http.get(`${this.baseURL}/movie/${id}?api_key=${this.apiKey}&language=vi-VN`);
+getTopRatedMovies(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}?_sort=vote_average&_order=desc`);
   }
-searchMovies(term: string): Observable<any> {
-  return this.http.get(`${this.baseURL}/search/movie?api_key=${this.apiKey}&query=${term}&language=vi-VN`);
-}
-getMovieVideos(id: string): Observable<any> {
-  return this.http.get(`${this.baseURL}/movie/${id}/videos?api_key=${this.apiKey}`);
-}
+
+  getUpcomingMovies(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}?_sort=release_date&_order=asc`);
+  }
+
+  getNowPlayingMovies(): Observable<any[]> {
+    const currentDate = new Date().toISOString().split('T')[0];
+    return this.http.get<any[]>(`${this.apiUrl}?release_date_lte=${currentDate}`);
+  }
+  getMovies(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl);
+  }
+
+  getMovieDetail(id: number | string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
+  }
+
+
+  searchMovies(query: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}?q=${query}`);
+  }
+
+
+  getMovieVideos(id: number | string): Observable<any> {
+
+    return of({ results: [] }); 
+
+
+  }
+
+
+  createMovie(movie: any): Observable<any> {
+    return this.http.post<any>(this.apiUrl, movie);
+  }
+
+  updateMovie(id: number, movie: any): Observable<any> {
+    return this.http.put<any>(`${this.apiUrl}/${id}`, movie);
+  }
+
+  deleteMovie(id: number | string): Observable<any> {
+    return this.http.delete<any>(`${this.apiUrl}/${id}`);
+  }
 }
