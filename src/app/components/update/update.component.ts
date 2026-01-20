@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MovieService } from '../../services/movie.service';
 import {Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-update',
   templateUrl: './update.component.html',
@@ -13,14 +14,14 @@ export class UpdateComponent implements OnInit {
   movieForm: FormGroup;
   currentMovieId: any = null;
   isEditMode: boolean = false;
-  e
 
   constructor(private movieService: MovieService, private fb: FormBuilder, private router: Router) {
     this.movieForm = this.fb.group({
       title: ['', Validators.required],
       overview: [''],
       vote_average: [0],
-      poster_path: ['']
+      poster_path: [''],
+      trailer_url: ['']
     });
   }
 

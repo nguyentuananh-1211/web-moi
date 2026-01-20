@@ -1,36 +1,60 @@
-<div class="full-screen-bg"
-     [style.background-image]="'url(https://image.tmdb.org/t/p/original' + (movie.backdrop_path ? movie.backdrop_path : movie.poster_path) + ')'">
+<div class="full-screen-bg" *ngIf="movie"
+     [style.background-image]="'url(https://image.tmdb.org/t/p/original' + (movie?.backdrop_path ? movie.backdrop_path : movie.poster_path) + ')'">
 </div>
 
 <div class="black-overlay"></div>
 
-<div class="container content-container">
+<div class="container content-container" *ngIf="movie; else loadingTemplate">
   <div class="row align-items-center">
     
     <div class="col-md-4 mb-4 mb-md-0">
-      <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" 
+      <img [src]="'https://image.tmdb.org/t/p/w500' + movie?.poster_path" 
            class="img-fluid rounded shadow-lg poster-card" 
            alt="Poster">
     </div>
 
     <div class="col-md-8 text-white">
-      <h1 class="display-4 text-outline fw-bold">{{ movie.title }}</h1>
+      <h1 class="display-4 text-outline fw-bold">{{ movie?.title }}</h1>
       
       <div class="d-flex align-items-center gap-3 my-3">
-        <span class="badge bg-warning text-dark fs-6">{{ movie.vote_average.toFixed(1) }} ⭐</span>
-        <span>📅 {{ movie.release_date | date:'yyyy' }}</span>
-        <span *ngIf="movie.runtime">⏳ {{ movie.runtime }} phút</span>
+        <span class="badge bg-warning text-dark fs-6" *ngIf="movie.vote_average">
+            {{ movie.vote_average }} ⭐
+        </span>
+        <span>📅 {{ movie?.release_date | date:'yyyy' }}</span>
+        <span *ngIf="movie?.runtime">⏳ {{ movie.runtime }} phút</span>
       </div>
 
       <p class="lead" style="font-size: 1.1rem; opacity: 0.9;">
-        {{ movie.overview }}
+        {{ movie?.overview }}
       </p>
 
       <div class="mt-4">
-        <button class="btn btn-danger btn-lg me-3">▶ Xem Ngay</button>
-        <button class="btn btn-outline-light btn-lg" routerLink="/">Quay lại</button>
+        <div class="trailer-section" *ngIf="safeTrailerUrl">
+          <h2>Trailer Chính Thức</h2>
+          <div class="video-container">
+            <iframe
+              [src]="safeTrailerUrl" 
+              title="Trailer"
+              frameborder="0" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>  
+        
+        <button class="btn btn-outline-light btn-lg mt-3" routerLink="/">Quay lại</button>
       </div>
     </div>
 
   </div>
 </div>
+
+<ng-template #loadingTemplate>
+    <div class="text-center text-white mt-5" style="padding-top: 100px;">
+        <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <h3 class="mt-3">Đang tải phim...</h3>
+        <p>Nếu đợi quá lâu, vui lòng quay lại trang chủ.</p>
+        <button class="btn btn-secondary" routerLink="/">Về trang chủ</button>
+    </div>
+</ng-template>

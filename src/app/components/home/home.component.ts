@@ -34,13 +34,20 @@ poster_path: ['']
     });
   }
   ngOnInit(): void {
+    
     this.loadMovies();
   }
   
   loadMovies(): void {
-    this.movieService.getPopularMovies().subscribe((data) => {  
-      this.movies = data; 
-    }); 
+    this.movieService.getPopularMovies().subscribe(
+      (data) => {  
+        this.movies = data; 
+        console.log('Dữ liệu mới từ MockAPI:', this.movies);
+      },
+      (error) => {
+        console.error('Lỗi không tải được danh sách:', error);
+      }
+    ); 
   }
 filterByCategory(category: string): void {
     this.selectedCategory = category;

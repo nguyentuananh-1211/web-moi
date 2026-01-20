@@ -24,6 +24,7 @@ import { UpdateComponent } from './components/update/update.component';
     RegisterComponent,
     FooterComponent,
     UpdateComponent,
+
     ],
   imports: [
     BrowserModule,

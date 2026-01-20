@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MovieService } from '../../services/movie.service';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'; // 1. Import cái này để xử lý link an toàn
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-movie-detail',
@@ -10,33 +10,53 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'; // 1.
 })
 export class MovieDetailComponent implements OnInit {
   movie: any;
-  cast : any[] = [];
-  videoUrl: SafeResourceUrl | null = null; 
+  safeTrailerUrl: SafeResourceUrl | null = null;
 
   constructor(
     private route: ActivatedRoute,
     private movieService: MovieService,
-    private sanitizer: DomSanitizer //
-  ) { }
+    private sanitizer: DomSanitizer
+  ) {}
 
   ngOnInit(): void {
-      window.scrollTo(0, 0);
+    // 1. Lấy ID từ thanh địa chỉ
     const id = this.route.snapshot.paramMap.get('id');
 
-    if (id) {
-      this.movieService.getMovieDetail(id).subscribe((data) => {
-        this.movie = data;
-      }); 
+    // 2. Gọi API lấy toàn bộ danh sách để tìm phim
+    this.movieService.getPopularMovies().subscribe({
+      next: (listMovies) => {
+        // Tìm phim có ID trùng khớp (dùng == để so sánh số và chuỗi)
+        this.movie = listMovies.find((m: any) => m.id == id);
 
-      this.movieService.getMovieVideos(id).subscribe((data) => {
-        if (data.results && data.results.length > 0) {
-          const trailer = data.results.find((vid: any) => vid.type === 'Trailer' && vid.site === 'YouTube');   
-          if (trailer) {
-            const url = 'https://www.youtube.com/embed/' + trailer.key;
-            this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+        if (this.movie) {
+          console.log('Đã tìm thấy phim:', this.movie);
+          
+          // --- XỬ LÝ TRAILER ---
+          if (this.movie.trailer_url) {
+             // Gọi hàm getYouTubeId (đã được định nghĩa ở dưới cùng)
+             const videoId = this.getYouTubeId(this.movie.trailer_url);
+             
+             // Tạo link embed và đánh dấu an toàn
+             const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+             this.safeTrailerUrl = this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
           }
+          // --------------------
+        } else {
+          console.error('Không tìm thấy phim có ID:', id);
         }
-      });
-    }
+      },
+      error: (err) => {
+        console.error('Lỗi khi tải danh sách:', err);
+      }
+    });
   }
+
+  // --- HÀM BẠN ĐANG THIẾU NẰM Ở ĐÂY ---
+  // Hàm này giúp tách mã ID video từ link YouTube bất kỳ
+  getYouTubeId(url: string): string {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : '';
+  }
+
 }

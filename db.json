@@ -2,19 +2,16 @@
   "movies": [
     {
       "title": "Quái Thú Vô Hình: Vùng Đất Chết Chóc",
-      "overview": "Trong tương lai, tại một hành tinh hẻo lánh, một Predator non nớt - kẻ bị chính tộc của mình ruồng bỏ - tìm thấy một đồng minh không ngờ tới là Thia và bắt đầu hành trình sinh tử nhằm truy tìm kẻ thù tối thượng. Bộ phim do Dan Trachtenberg - đạo diễn của Prey chỉ đạo và nằm trong chuỗi thương hiệu Quái Thú Vô Hình Predator.",
+      "overview": "Trong tương lai, tại một hành tinh hẻo lánh, một Predator non nớt - kẻ bị chính tộc của mình ruồng bỏ - tìm thấy một đồng minh không ngờ tới là Thia và bắt đầu hành trình sinh tử nhằm truy tìm kẻ thù tối thượng.",
       "vote_average": 9.1,
       "poster_path": "/6aPy2tMgQLVz2IcifrL1Z2Q9u1t.jpg",
-      "id": 1242898
+      "id": 1242898,
+      "trailer_url": "https://www.youtube.com/embed/Rav-aQM7jLQ"
     },
     {
       "adult": false,
       "backdrop_path": "/gQimJqYMKCkwHIo8wwYKhmnCfBr.jpg",
-      "genre_ids": [
-        28,
-        80,
-        53
-      ],
+      "genre_ids": [ 28, 80, 53 ],
       "id": 1242501,
       "original_language": "en",
       "original_title": "Icefall",
@@ -25,75 +22,64 @@
       "title": "Icefall",
       "video": false,
       "vote_average": 6.8,
-      "vote_count": 74
+      "vote_count": 74,
+      "trailer_url": "https://www.youtube.com/embed/3hD7SZ8HhSQ"
     },
     {
       "adult": false,
       "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
-      "genre_ids": [
-        878,
-        12,
-        14
-      ],
+      "genre_ids": [ 878, 12, 14 ],
       "id": 83533,
       "original_language": "en",
       "original_title": "Avatar: Fire and Ash",
-      "overview": "Sau cuộc chiến tàn khốc với RDA và nỗi mất mát to lớn khi đứa con trai cả hy sinh, Jake Sully và Neytiri phải đối mặt với một mối đe dọa mới trên Pandora: tộc Tro Tàn — một nhóm Na'vi hung bạo và khát khao quyền lực, do thủ lĩnh tàn nhẫn Varang dẫn dắt. Gia đình Jake buộc phải chiến đấu để sinh tồn và bảo vệ tương lai của Pandora, trong một cuộc xung đột đẩy họ đến giới hạn cuối cùng cả về thể xác lẫn tinh thần.",
+      "overview": "Sau cuộc chiến tàn khốc với RDA và nỗi mất mát to lớn khi đứa con trai cả hy sinh, Jake Sully và Neytiri phải đối mặt với một mối đe dọa mới trên Pandora: tộc Tro Tàn.",
       "popularity": 289.2573,
       "poster_path": "/w6DBmG260sCHBQdGzkBIVn9gAQZ.jpg",
       "release_date": "2025-12-17",
       "title": "Avatar: Lửa và Tro Tàn",
       "video": false,
       "vote_average": 7.358,
-      "vote_count": 1448
+      "vote_count": 1448,
+      "trailer_url": "https://www.youtube.com/embed/IpxqPIj2DeM"
     },
     {
       "adult": false,
       "backdrop_path": "/7nfpkR9XsQ1lBNCXSSHxGV7Dkxe.jpg",
-      "genre_ids": [
-        16,
-        35,
-        12,
-        10751,
-        9648
-      ],
+      "genre_ids": [ 16, 35, 12, 10751, 9648 ],
       "id": 1084242,
       "original_language": "en",
       "original_title": "Zootopia 2",
-      "overview": "Trong bộ phim \"Zootopia 2 - Phi Vụ Động Trời 2\" từ Walt Disney Animation Studios, hai thám tử Judy Hopps (lồng tiếng bởi Ginnifer Goodwin) và Nick Wilde (lồng tiếng bởi Jason Bateman) bước vào hành trình truy tìm một sinh vật bò sát bí ẩn vừa xuất hiện tại Zootopia và khiến cả vương quốc động vật bị đảo lộn. Để phá được vụ án, Judy và Nick buộc phải hoạt động bí mật tại những khu vực mới lạ của thành phố – nơi mối quan hệ đồng nghiệp của họ bị thử thách hơn bao giờ hết.",
+      "overview": "Hai thám tử Judy Hopps và Nick Wilde bước vào hành trình truy tìm một sinh vật bò sát bí ẩn vừa xuất hiện tại Zootopia.",
       "popularity": 201.8847,
       "poster_path": "/5wXpOF9WPUKliIzNBdAqwAStLHU.jpg",
       "release_date": "2025-11-26",
       "title": "Phi Vụ Động Trời 2",
       "video": false,
       "vote_average": 7.604,
-      "vote_count": 1082
+      "vote_count": 1082,
+      "trailer_url": "https://www.youtube.com/embed/M2mWp43LWHQ"
     },
     {
       "adult": false,
       "backdrop_path": "/sK3z0Naed3H1Wuh7a21YRVMxYqt.jpg",
-      "genre_ids": [
-        9648,
-        53
-      ],
+      "genre_ids": [ 9648, 53 ],
       "id": 1368166,
       "original_language": "en",
       "original_title": "The Housemaid",
-      "overview": "Từ đạo diễn Paul Feig, một thế giới hỗn loạn sẽ mở ra, nơi sự hoàn hảo chỉ là ảo giác và mọi thứ dường như đều đang che đậy một bí mật đằng sau. Để chạy trốn khỏi quá khứ, Millie (Sydney Sweeney) trở thành bảo mẫu cho gia đình Nina (Amanda Seyfried) và Andrew (Brandon Sklener), một cặp đôi giàu có. Nhưng ngay khi cô chuyển vào sống chung và bắt đầu công việc \"trong mơ\", sự thật dần được hé lộ - đằng sau vẻ ngoài xa hoa lộng lẫy là mối nguy lớn hơn bất cứ thứ gì Millie có thể tưởng tượng. Một trò chơi đầy cám dỗ của bí mật và quyền lực sắp bắt đầu.",
+      "overview": "Để chạy trốn khỏi quá khứ, Millie trở thành bảo mẫu cho gia đình Nina và Andrew. Nhưng sự thật dần được hé lộ - đằng sau vẻ ngoài xa hoa lộng lẫy là mối nguy lớn.",
       "popularity": 163.3652,
       "poster_path": "/vpHLCt2bwYmmkGH4soqJNIFLOUQ.jpg",
       "release_date": "2025-12-18",
       "title": "Cô Hầu Gái",
       "video": false,
       "vote_average": 7.235,
-      "vote_count": 371
+      "vote_count": 371,
+      "trailer_url": "https://www.youtube.com/embed/YBk8GKSE7Ik"
     },
     {
       "adult": false,
       "backdrop_path": "/mFDQ8f2lPHorGwtuE0fjnUIbKLF.jpg",
-      "genre_ids": [
-        35
-      ],
+      "genre_ids": [ 35 ],
       "id": 62029,
       "original_language": "it",
       "original_title": "Bingo Bongo",
@@ -104,35 +90,30 @@
       "title": "Bingo Bongo",
       "video": false,
       "vote_average": 5.711,
-      "vote_count": 166
+      "vote_count": 166,
+      "trailer_url": "https://www.youtube.com/embed/5wqLViaDnnM"
     },
     {
       "adult": false,
       "backdrop_path": "/oIJjO1CvEdTMFNkWfHaV0RB584G.jpg",
-      "genre_ids": [
-        28,
-        80,
-        53
-      ],
+      "genre_ids": [ 28, 80, 53 ],
       "id": 628847,
       "original_language": "en",
       "original_title": "Trap House",
-      "overview": "Một đặc vụ DEA chìm và cộng sự của anh ta bắt đầu cuộc rượt đuổi mèo vờn chuột với một nhóm trộm táo tợn và đáng ngạc nhiên – chính là những đứa con tuổi teen nổi loạn của họ, những kẻ đã bắt đầu cướp bóc từ một băng đảng ma túy nguy hiểm, sử dụng chiến thuật và thông tin tình báo tối mật của cha mẹ chúng để thực hiện điều đó.",
+      "overview": "Một đặc vụ DEA chìm và cộng sự của anh ta bắt đầu cuộc rượt đuổi mèo vờn chuột với một nhóm trộm táo tợn - chính là những đứa con tuổi teen nổi loạn của họ.",
       "popularity": 135.4772,
       "poster_path": "/e39G8lKvuyvWy7ZoeTMp6LnFJMG.jpg",
       "release_date": "2025-11-14",
       "title": "Báo Thủ Báo Nhà",
       "video": false,
       "vote_average": 6.432,
-      "vote_count": 148
+      "vote_count": 148,
+      "trailer_url": "https://www.youtube.com/embed/9I9XYmnYUl4"
     },
     {
       "adult": false,
       "backdrop_path": "/wCwZ4ljSsWyZyTiyk1tGQtBHTDx.jpg",
-      "genre_ids": [
-        28,
-        18
-      ],
+      "genre_ids": [ 28, 18 ],
       "id": 1511417,
       "original_language": "te",
       "original_title": "Baahubali: The Epic",
@@ -143,233 +124,59 @@
       "title": "Baahubali: The Epic",
       "video": false,
       "vote_average": 5.7,
-      "vote_count": 22
+      "vote_count": 22,
+      "trailer_url": "https://www.youtube.com/embed/32VzaaXSij0"
     },
     {
       "adult": false,
       "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
-      "genre_ids": [
-        16,
-        28,
-        14
-      ],
+      "genre_ids": [ 16, 28, 14 ],
       "id": 1311031,
       "original_language": "ja",
       "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
-      "overview": "Khi các thành viên của Sát Quỷ Đoàn và Trụ Cột tham gia vào chương trình đặc huấn để chuẩn bị cho trận chiến sắp với lũ quỷ, Kibutsuji Muzan xuất hiện tại Dinh thự Ubuyashiki. Khi thủ lĩnh của Sát Quỷ Đoàn gặp nguy hiểm, Tanjiro và các Trụ Cột trở về trụ sở Thế nhưng, Muzan bất ngờ kéo toàn bộ Sát Quỷ Đoàn đến hang ổ cuối cùng của lũ quỷ là Vô Hạn Thành, mở màn cho trận đánh cuối cùng của cả hai phe.",
+      "overview": "Muzan bất ngờ kéo toàn bộ Sát Quỷ Đoàn đến hang ổ cuối cùng của lũ quỷ là Vô Hạn Thành, mở màn cho trận đánh cuối cùng của cả hai phe.",
       "popularity": 131.3128,
       "poster_path": "/nV99ACeAa8fFFso0tQZ3HktEf5X.jpg",
       "release_date": "2025-07-18",
       "title": "Thanh Gươm Diệt Quỷ: Vô Hạn Thành",
       "video": false,
       "vote_average": 7.637,
-      "vote_count": 659
+      "vote_count": 659,
+      "trailer_url": "https://www.youtube.com/embed/3AUm3j6Bi5A"
     },
     {
       "adult": false,
       "backdrop_path": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
-      "genre_ids": [
-        878,
-        53
-      ],
+      "genre_ids": [ 878, 53 ],
       "id": 755898,
       "original_language": "en",
       "original_title": "War of the Worlds",
-      "overview": "Will Radford — chuyên gia phân tích an ninh mạng hàng đầu của Bộ An ninh Nội địa — chuyên theo dõi các mối đe dọa đến an ninh quốc gia thông qua một chương trình giám sát diện rộng. Nhưng một cuộc tấn công bất ngờ từ một thực thể bí ẩn đã khiến anh bắt đầu nghi ngờ: phải chăng chính phủ đang che giấu điều gì đó… không chỉ với anh mà với toàn thế giới?",
+      "overview": "Một cuộc tấn công bất ngờ từ một thực thể bí ẩn đã khiến chuyên gia phân tích an ninh mạng bắt đầu nghi ngờ: phải chăng chính phủ đang che giấu điều gì đó?",
       "popularity": 128.4569,
       "poster_path": "/3e6GQvCA9hguxqfqA75BDvG7Vvp.jpg",
       "release_date": "2025-07-29",
       "title": "Cuộc Chiến Giữa Các Thế Giới",
       "video": false,
       "vote_average": 4.222,
-      "vote_count": 837
+      "vote_count": 837,
+      "trailer_url": "https://www.youtube.com/embed/oIXFOlTyhHI"
     },
     {
       "adult": false,
       "backdrop_path": "/qth56RA3rkUlhbDRDKGeMJEssdi.jpg",
-      "genre_ids": [
-        10749,
-        35,
-        18
-      ],
+      "genre_ids": [ 10749, 35, 18 ],
       "id": 1034716,
       "original_language": "en",
       "original_title": "People We Meet on Vacation",
       "overview": "Poppy là cô nàng phóng khoáng. Alex thích lên kế hoạch. Sau nhiều chuyến đi nghỉ hè, đôi bạn trái ngược này tự hỏi liệu họ có thể trở thành cặp đôi hoàn hảo không.",
       "popularity": 124.0432,
-      "poster_path": "/kOrJqRyt1pklNgDwJMjzN1GuNXS.jpg",
-      "release_date": "2026-01-06",
-      "title": "Những người chúng ta gặp trong kỳ nghỉ",
+      "poster_path": "/kOrJqX5YVhnXj8tG7bX0Y6l1d5.jpg",
+      "release_date": "2025-06-27",
+      "title": "Những Người Ta Gặp Trong Kỳ Nghỉ",
       "video": false,
-      "vote_average": 7.217,
-      "vote_count": 221
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/j3OksPD3jY3vhqf1sKOWXWLQEMB.jpg",
-      "genre_ids": [
-        27,
-        28,
-        878
-      ],
-      "id": 1301122,
-      "original_language": "en",
-      "original_title": "Erbsünde - Veil of Sin",
-      "overview": "",
-      "popularity": 108.933,
-      "poster_path": "/3daBOc5ZcICXMzAVNhzJTSgweaP.jpg",
-      "release_date": "2024-10-13",
-      "title": "Erbsünde - Veil of Sin",
-      "video": false,
-      "vote_average": 4.667,
-      "vote_count": 6
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/fP6L6V42980QmuoyyGXCmWphwpT.jpg",
-      "genre_ids": [
-        28,
-        12,
-        14
-      ],
-      "id": 1131759,
-      "original_language": "ko",
-      "original_title": "전지적 독자 시점",
-      "overview": "Khi thế giới diệt vong trong cuốn tiểu thuyết yêu thích bỗng biến thành hiện thực, Kim Dokja (Ahn Hyo-seop) - 1 nhân viên văn phòng bình thường cũng là người duy nhất biết được kết truyện phải bắt tay vào cuộc hành trình đến phân cảnh cuối cùng. Cùng những đồng đội ngẫu nhiên và người hùng Yu Jeong-hyeok (Lee Min-ho) tập hợp thành 1 nhóm, Kim Dokja cần vượt qua mọi thử thách để sống sót trong thế giới bộ truyện mà anh yêu thích.",
-      "popularity": 108.446,
-      "poster_path": "/25ybePclL2m3jBGvrE8XjV7zTMO.jpg",
-      "release_date": "2025-07-23",
-      "title": "Toàn Trí Độc Giả",
-      "video": false,
-      "vote_average": 6.9,
-      "vote_count": 44
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/4BtL2vvEufDXDP4u6xQjjQ1Y2aT.jpg",
-      "genre_ids": [
-        28,
-        80,
-        18,
-        53
-      ],
-      "id": 1419406,
-      "original_language": "zh",
-      "original_title": "捕风追影",
-      "overview": "Wong Tak-Chung, một cựu chuyên gia giám sát được biết đến với khả năng phân tích dữ liệu và truy vết bậc thầy, bị cảnh sát Ma Cao mời trở lại hợp tác điều tra sau khi xuất hiện hàng loạt vụ cướp quy mô lớn do một tổ chức tội phạm công nghệ cao thực hiện.",
-      "popularity": 101.5904,
-      "poster_path": "/5LGUvRBXoXHsMZsZrCGBOVmwOVd.jpg",
-      "release_date": "2025-08-16",
-      "title": "Bổ Phong Truy Ảnh",
-      "video": false,
-      "vote_average": 7.09,
-      "vote_count": 282
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/dHSz0tSFuO2CsXJ1CApSauP9Ncl.jpg",
-      "genre_ids": [
-        53,
-        80,
-        9648
-      ],
-      "id": 425274,
-      "original_language": "en",
-      "original_title": "Now You See Me: Now You Don't",
-      "overview": "Tứ Kỵ Sĩ chính thức tái xuất, bắt tay cùng các tân binh ảo thuật gia Gen Z trong một phi vụ đánh cắp kim cương liều lĩnh nhất trong sự nghiệp. Họ phải đối đầu với bà trùm Veronika của đế chế rửa tiền nhà Vandenberg (do Rosamund Pike thủ vai) - một người phụ nữ quyền lực và đầy thủ đoạn. Khi kinh nghiệm lão làng của bộ tứ ảo thuật va chạm với công nghệ 4.0 của một mạng lưới tội phạm xuyên lục địa, liệu ai sẽ làm chủ cuộc chơi? Hãy chuẩn bị tinh thần cho những cú xoắn não mà bạn không thể đoán trước!",
-      "popularity": 100.4047,
-      "poster_path": "/usoYdcapXSsqAM1bDOtD7H42Wxe.jpg",
-      "release_date": "2025-11-12",
-      "title": "Phi Vụ Thế Kỷ 3: Thoắt Ẩn Thoắt Hiện",
-      "video": false,
-      "vote_average": 6.575,
-      "vote_count": 881
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/novE5UrqfLIFEMe5QBnjm18GG4E.jpg",
-      "genre_ids": [
-        28,
-        80,
-        53
-      ],
-      "id": 1512623,
-      "original_language": "en",
-      "original_title": "Risqué",
-      "overview": "",
-      "popularity": 97.6459,
-      "poster_path": "/h6OsRrDwbspLnKMvlFl57QFDP7d.jpg",
-      "release_date": "2025-08-01",
-      "title": "Risqué",
-      "video": false,
-      "vote_average": 7.523,
-      "vote_count": 43
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/ufuabtiOem0kHeYz6b8x8MjBb2L.jpg",
-      "genre_ids": [
-        35,
-        18
-      ],
-      "id": 1208348,
-      "original_language": "en",
-      "original_title": "Rental Family",
-      "overview": "Một diễn viên người Mỹ ở Tokyo chật vật tìm kiếm ý nghĩa cuộc sống cho đến khi nhận một công việc kỳ lạ: làm việc cho một công ty “gia đình cho thuê” ở Nhật Bản, vào vai người thân cho những người xa lạ. Khi dần hòa mình vào thế giới của khách hàng, anh bắt đầu hình thành những mối gắn kết thật sự — làm mờ ranh giới giữa diễn xuất và hiện thực.",
-      "popularity": 95.7149,
-      "poster_path": "/A5lswNlytTUrnMWsuD0NFfhZlf3.jpg",
-      "release_date": "2025-11-20",
-      "title": "Gia Đình Cho Thuê",
-      "video": false,
-      "vote_average": 7.611,
-      "vote_count": 108
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/mOeBBD49M72vCEXzgA1dS2MwGno.jpg",
-      "genre_ids": [
-        27,
-        53
-      ],
-      "id": 1228246,
-      "original_language": "en",
-      "original_title": "Five Nights at Freddy's 2",
-      "overview": "Một năm sau cơn ác mộng siêu nhiên tại tiệm Pizza Freddy Fazbear, những câu chuyện xoay quanh sự kiện ấy đã bị bóp méo thành một huyền thoại kỳ quặc tại địa phương, truyền cảm hứng cho lễ hội Fazfest đầu tiên của thị trấn. Không hề biết sự thật bị che giấu, Abby lén trốn ra ngoài để gặp lại Freddy, Bonnie, Chica và Foxy — khởi đầu cho chuỗi sự kiện kinh hoàng, hé lộ bí mật đen tối về nguồn gốc thật sự của Freddy’s, và đánh thức một nỗi kinh hoàng bị chôn vùi suốt hàng thập kỷ.",
-      "popularity": 94.3377,
-      "poster_path": "/512e7sOroI5InisAXpPI1pqvcHG.jpg",
-      "release_date": "2025-12-03",
-      "title": "Năm Đêm Kinh Hoàng 2",
-      "video": false,
-      "vote_average": 6.784,
-      "vote_count": 594
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/8vLt9TYFZdAwYtqImvggTM5yFnF.jpg",
-      "genre_ids": [
-        878,
-        12,
-        18
-      ],
-      "id": 982843,
-      "original_language": "ko",
-      "original_title": "대홍수",
-      "overview": "Đây có thể là ngày cuối cùng của Trái Đất và cuộc vật lộn sinh tử trong một căn hộ ngập nước nhanh chóng trở thành hi vọng sống sót duy nhất của nhân loại.",
-      "popularity": 89.9539,
-      "poster_path": "/AfkHDoO2iyW2mF2jdlWdCKgA0VJ.jpg",
-      "release_date": "2025-09-18",
-      "title": "Đại hồng thủy",
-      "video": false,
-      "vote_average": 6.031,
-      "vote_count": 485
-    },
-    {
-      "title": "Chiếc Xe Tank",
-      "description": "",
-      "overview": "Cực hay",
-      "vote_average": 7.021,
-      "poster_path": "/7ldq7avLKfNWE3Je0EVO6ZJSBIF.jpg",
-      "id": 1512624
+      "vote_average": 7.5,
+      "vote_count": 48,
+      "trailer_url": "https://www.youtube.com/embed/3c6bWZ3g0uE"
     }
   ]
 }

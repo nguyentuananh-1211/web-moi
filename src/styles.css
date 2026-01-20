@@ -7,7 +7,7 @@ body {
 }
 body {
   padding-top: 70px !important;
-  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/dace47b4-a5cb-4368-80fe-c26f3e77d540/f5b52435-458f-498f-9d1d-ccd4f1af9913/VN-vi-20231023-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1470&auto=format&fit=crophttps://assets.nflxext.com/ffe/siteui/vlv3/dace47b4-a5cb-4368-80fe-c26f3e77d540/f5b52435-458f-498f-9d1d-ccd4f1af9913/VN-vi-20231023-popsignuptwoweeks-perspective_alpha_website_large.jpg');
   background-size: cover;       /* Phủ kín màn hình */
   background-position: center;  /* Căn giữa ảnh */
   background-attachment: fixed; /* Cố định ảnh khi cuộn */  

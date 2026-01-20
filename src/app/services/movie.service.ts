@@ -6,25 +6,26 @@ import { Observable, of } from 'rxjs'; // Import thêm 'of' để xử lý video
   providedIn: 'root'
 })
 export class MovieService {
-  private apiUrl = 'http://localhost:3000/movies'; 
+  // private apiUrl = 'http://localhost:3000/movies';
+  private apiUrl = 'https://696d86bad7bacd2dd713e2d4.mockapi.io/movies'; 
 
   constructor(private http: HttpClient) { }
   getPopularMovies(): Observable<any[]> {
-  return this.http.get<any[]>(`${this.apiUrl}?_sort=popularity&_order=desc`);
+return this.http.get<any[]>(this.apiUrl);
 }
 getTopRatedMovies(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}?_sort=vote_average&_order=desc`);
+    return this.http.get<any[]>(this.apiUrl);
   }
 
   getUpcomingMovies(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}?_sort=release_date&_order=asc`);
+    return this.http.get<any[]>(this.apiUrl);
   }
 
   getNowPlayingMovies(): Observable<any[]> {
     const currentDate = new Date().toISOString().split('T')[0];
-    return this.http.get<any[]>(`${this.apiUrl}?release_date_lte=${currentDate}`);
+    return this.http.get<any[]>(this.apiUrl);
   }
-  getMovies(): Observable<any[]> {
+  getMovies(): Observable<any[]> {  
     return this.http.get<any[]>(this.apiUrl);
   }
 
